@@ -1,4 +1,4 @@
-# Nexon Nest Microservices 프로젝트
+# Nexon Nest MSA 프로젝트
 
 ## 개요
 
