@@ -30,7 +30,7 @@ API 요청 방법 및 주의사항
 	•	직접 auth-service (포트 3001) 또는 event-service (포트 3002)에 요청하지 마세요.
 
 예시: 회원가입 요청
-
+```
 POST http://localhost:3000/api/v1/auth/register
 Content-Type: application/json
 
@@ -43,6 +43,7 @@ Content-Type: application/json
   "email": "hong@example.com",
   "roles": ["USER"]
 }
+```
 
 ** 권한이 필요한 기능들은 header 에 Bearer ${accessToken} 형식으로 요청을 해아 토큰 및 권한 검증이 됩니다.
    토큰을 같이 보내지 않을 경우, 토큰 검증에 실패하며, 요청에 실패하게 됩니다.
