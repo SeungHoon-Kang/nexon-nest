@@ -44,6 +44,11 @@ Content-Type: application/json
   "roles": ["USER"]
 }
 
+** 권한이 필요한 기능들은 header 에 Bearer ${accessToken} 형식으로 요청을 해아 토큰 및 권한 검증이 됩니다.
+   토큰을 같이 보내지 않을 경우, 토큰 검증에 실패하며, 요청에 실패하게 됩니다.
+
+
+
 각 서비스별 README 안내
 	•	각 서비스 디렉토리(auth-service/, event-service/, gateway-service/) 내에는
 해당 서비스의 상세 내용과 API 명세가 포함된 README.md가 별도로 존재합니다.
